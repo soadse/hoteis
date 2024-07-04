@@ -84,13 +84,13 @@ nav > #entrar {
 #hoteis > h1 {
     margin: 20px;
 }
-.hoteis > h2 {
-    border-bottom: 1px solid black;
+#hoteis > .hoteis > .container > h2 {
+    margin-bottom: 20px;
 }
-#hoteis > .hoteis > .hoteisIMG {
+#hoteis > .hoteis > .container > .hoteisIMG {
     display: flex;
 }
-#hoteis > .hoteis > .hoteisIMG > img {
+#hoteis > .hoteis > .container > .hoteisIMG > img {
     width: 100%;
 }
 #hoteis > .hoteis > p {
