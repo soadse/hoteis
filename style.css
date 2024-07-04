@@ -1,0 +1,96 @@
+@charset "UTF-8";
+:root {
+    --cor01: #35B1F7;
+    --cor02: #232A31;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+nav {
+    background-color: var(--cor02);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav > a {
+    color: white;
+    text-decoration: none;
+}
+nav > #entrar {
+    background-color: white;
+    color: var(--cor02);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+#home {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(imagens/home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+#home > div {
+    margin-bottom: 80px;
+    margin-left: 5px;
+    padding: 10px;
+}
+#info {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info > img {
+    width: 50%;
+}
+.info > p {
+    text-align: center;
+    margin: 20px;
+}
+#hoteis {
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+}
+#hoteis > .hoteis {
+    background-color: lightblue;
+    margin: 5px;
+    overflow-x: auto;
+    border-radius: 0px 20px 0px 20px;
+}
+#hoteis > h1 {
+    margin: 20px;
+}
+#hoteis > .hoteis > h2 {
+    margin: 10px;
+}
+#hoteis > .hoteis > .hoteisIMG {
+    display: flex;
+}
+#hoteis > .hoteis > .hoteisIMG > img {
+    width: 100%;
+}
+#hoteis > .hoteis > p {
+    margin: 20px;
+}
