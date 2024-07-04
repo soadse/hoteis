@@ -74,16 +74,18 @@ nav > #entrar {
     min-height: 100vh;
 }
 #hoteis > .hoteis {
-    background-color: lightblue;
-    margin: 5px;
-    overflow-x: auto;
-    border-radius: 0px 20px 0px 20px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 #hoteis > h1 {
     margin: 20px;
 }
-#hoteis > .hoteis > h2 {
-    margin: 10px;
+.hoteis > h2 {
+    border-bottom: 1px solid black;
 }
 #hoteis > .hoteis > .hoteisIMG {
     display: flex;
@@ -92,5 +94,6 @@ nav > #entrar {
     width: 100%;
 }
 #hoteis > .hoteis > p {
-    margin: 20px;
+    margin: 5px;
+    line-height: 2em;
 }
