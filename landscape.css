@@ -160,6 +160,7 @@ form > #viagem > textarea {
     height: 100px;
     margin-top: 20px;
     padding-left: 10px;
+    padding-top: 10px;
     resize: none;
 }
 form > #viagem > #btn {
