@@ -1,6 +1,191 @@
 @charset "UTF-8";
-
+:root {
+    --cor01: #35B1F7;
+    --cor02: #232A31;
+}
 * {
     padding: 0px;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+/* =============================================== */
+nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: var(--cor02);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.493);
+}
+nav > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+nav > a:hover {
+    background-color: gray;
+    transition: all .5s;
+}
+nav > a:not(:hover) {
+    transition: all .2s;
+}
+nav > a:active {
+    color: gray;
+}
+/* ================================================= */
+#home {
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    animation: imagens 15s infinite linear;
+}
+@keyframes imagens {
+    0% {
+        background-image: url(imagens/lands01.jpg);
+    }
+    25% {
+        background-image: url(imagens/lands02.jpg);
+    }
+    50% {
+        background-image: url(imagens/lands03.jpg);
+    }
+    75% {
+        background-image: url(imagens/lands04.jpg);
+    }
+    100% {
+        background-image: url(imagens/lands01.jpg);
+    }
+}
+#home > .home {
+    font-weight: bolder;
+    color: var(--cor02);
+}
+/* ================================================== */
+#info {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info > img {
+    width: 200px;
+}
+.info > p {
+    text-align: center;
+    margin: 20px;
+    width: 50%;
+}
+/* ============================================== */
+#hoteis {
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+}
+#hoteis > .hoteis {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#hoteis > h1 {
+    margin: 20px;
+}
+#hoteis > .hoteis > .container > h2 {
+    margin-top: 30px;
+    color: var(--cor02);
+}
+#hoteis > .hoteis > .container > .hoteisIMG {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    overflow-x: auto;
+}
+#hoteis > .hoteis > .container > .hoteisIMG > img {
+    width: 100%;
+    margin: 20px;
+}
+#hoteis > .hoteis > p {
+    width: 50%;
+    line-height: 2em;
+}
+/* ========================================= */
+form {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+form > h2, p {
+    margin: 20px;
+}
+form > #viagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form > #viagem > input {
+    width: 50%;
+    height: 25px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+form > #viagem > textarea {
+    width: 50%;
+    height: 100px;
+    margin-top: 20px;
+    padding-left: 10px;
+    resize: none;
+}
+form > #viagem > #btn {
+    background-color: var(--cor02);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+}
+form > #viagem > #btn:hover {
+    background-color: gray;
+    color: var(--cor02);
+    transition: all .2s;
+}
+form > #viagem > #btn:not(:hover) {
+    transition: all .2s;
+}
+/* ========================================== */
+footer {
+    height: 30px;
+    background-color: var(--cor02);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > a {
+    text-decoration: none;
+    color: white;
 }
