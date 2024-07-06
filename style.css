@@ -77,7 +77,6 @@ nav > #entrar {
     width: 100%;
     min-height: 100vh;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
@@ -89,9 +88,11 @@ nav > #entrar {
 }
 #hoteis > .hoteis > .container > .hoteisIMG {
     display: flex;
+    overflow-x: auto;
 }
 #hoteis > .hoteis > .container > .hoteisIMG > img {
-    width: 100%;
+    width: 90%;
+    margin: 10px;
 }
 #hoteis > .hoteis > p {
     margin: 5px;
