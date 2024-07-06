@@ -42,7 +42,7 @@ nav > a:active {
 /* ================================================= */
 #home {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-image: url(imagens/home.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -50,10 +50,8 @@ nav > a:active {
     justify-content: start;
     align-items: end;
 }
-#home > div {
-    margin-bottom: 150px;
-    margin-left: 5px;
-    padding: 10px;
+#home > .home {
+    padding-left: 10px;
 }
 /* ================================================== */
 #info {
