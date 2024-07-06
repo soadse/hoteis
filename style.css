@@ -16,6 +16,8 @@ body {
 }
 /* =============================================== */
 nav {
+    position: static;
+    top: 0%;
     background-color: var(--cor02);
     padding: 10px;
     display: flex;
