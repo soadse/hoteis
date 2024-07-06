@@ -84,7 +84,7 @@ nav > #entrar {
     margin: 20px;
 }
 #hoteis > .hoteis > .container > h2 {
-    margin-bottom: 20px;
+    margin-top: 10px;
 }
 #hoteis > .hoteis > .container > .hoteisIMG {
     display: flex;
@@ -92,7 +92,7 @@ nav > #entrar {
 }
 #hoteis > .hoteis > .container > .hoteisIMG > img {
     width: 90%;
-    margin: 10px;
+    margin: 20px;
 }
 #hoteis > .hoteis > p {
     margin: 5px;
